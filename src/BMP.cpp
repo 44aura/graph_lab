@@ -137,7 +137,7 @@ void BMP::image_settings(int32_t height, int32_t width){
     header.width = width;
     header.size_image = header.height * header.width * 3;
     header.file_size = sizeof(BMPHeader) + header.size_image;
-    std::vector<std::vector<uint8_t>> image(height, std::vector<uint8_t>(width * 3, 255));
+    std::vector<std::vector<u_int8_t>> image(height, std::vector<u_int8_t>(width * 3, 255));
     data = image;
 }
 

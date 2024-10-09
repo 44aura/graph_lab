@@ -1,10 +1,12 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 #include "../headers/print_graph.h"
 
-int main(){
+int main(int argc, char* argv[]){
     Print_graph printer;
-    std::ifstream inputf("example.txt");
+    std::string inp = "../examples/" + std::string(argv[1]);
+    std::ifstream inputf(inp);
     int V, E;
     inputf >> V >> E;  
     printer.graph_resize(V, E);

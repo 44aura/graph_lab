@@ -7,4 +7,4 @@ file(GLOB SOURCES
     header/*.h
     src/*.cpp)
 
-add_executable(graph_exe ${SOURCES})
+add_executable(graph ${SOURCES})
